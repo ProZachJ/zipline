@@ -10,6 +10,7 @@ from zipline.utils.calendars.exchange_calendar_cme import CMEExchangeCalendar
 from zipline.utils.calendars.exchange_calendar_bmf import BMFExchangeCalendar
 from zipline.utils.calendars.exchange_calendar_lse import LSEExchangeCalendar
 from zipline.utils.calendars.exchange_calendar_tsx import TSXExchangeCalendar
+from zipline.utils.calendars.exchange_calendar_poloniex import POLONIEXExchangeCalendar
 from zipline.utils.calendars.us_futures_calendar import (
     QuantopianUSFuturesCalendar,
 )
@@ -23,6 +24,7 @@ _default_calendar_factories = {
     'LSE': LSEExchangeCalendar,
     'TSX': TSXExchangeCalendar,
     'us_futures': QuantopianUSFuturesCalendar,
+    'POLONIEX': POLONIEXExchangeCalendar,
 }
 _default_calendar_aliases = {
     'NASDAQ': 'NYSE',
